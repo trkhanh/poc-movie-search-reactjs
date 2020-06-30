@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 
-
+/**
+ * Nested Data To String
+ * @param {any} nestedData 
+ */
 function nestedDataToString(nestedData) {
   let nestedArray = [],
     resultString;
