@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,11 +22,55 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
+  <title>ReactJS - TMDb Movie Search</title>
+  <meta name="description"
+    content="ReactJS TMDb Movie Search - A responsive web app to search movie information and artwork via The Movie Database (TMDb) API. Built on Facebook's ReactJS framework.">
+  <meta name="viewport" content="width=device-width">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ReactJS - TMDb Movie Search" />
+  <meta name="twitter:description" content="Search movie information and artwork via The Movie Database (TMDb) API." />
+  <meta name="twitter:image" content="images/twitter_card.jpg">
+  <meta property="og:title" content="ReactJS TMDb Movie Search" />
+  <meta property="og:description"
+    content="ReactJS TMDb Movie Search - A responsive web app to search movie information and artwork via The Movie Database (TMDb) API. Built on Facebook's ReactJS framework." />
+  <meta property="og:url" content="https://skempin.github.io/reactjs-tmdb-app/" />
+  <meta property="og:image" content="https://skempin.github.io/reactjs-tmdb-app/images/facebook_graph.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Stephen Kempin - Github" />
+  <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Oswald:300" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed.png">
+</head>
+
+<body>
+  <a href="https://github.com/SKempin/reactjs-tmdb-app"
+    onclick="ga('send', 'event', 'link', 'external', 'Fork on Github ribbon')"><img
+      style="position: absolute; top: 0; right: 0; border: 0;"
+      src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+  <div id="outer-container">
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-lg-10 offset-lg-1">
+          <div id="app"></div>
+          <footer>
+            <span><a href="http://www.stephenkempin.co.uk/" rel="author"
+                onclick="ga('send', 'event', 'link', 'external', 'Portfolio')">Designed &amp; developed by Stephen
+                Kempin</a> </span>
+            <span><a href="https://github.com/SKempin/reactjs-tmdb-app" title="View Github Repo"><i
+                  class="icon ion-social-github" aria-hidden="true"
+                  onclick="ga('send', 'event', 'link', 'external', 'View Code')"></i>View Code</a></span>
+            <span><a href="https://play.google.com/store/apps/developer?id=SK+-+UK" title="View SK-UK Google Play Store"
+                onclick="ga('send', 'event', 'link', 'external', 'SK-UK Google Play')"><i
+                  class="icon ion-social-android" aria-hidden="true"></i>Developer Google Play Store</a></span>
+
+          </footer>
+        </div>
+      </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +81,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>
