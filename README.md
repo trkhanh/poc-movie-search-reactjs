@@ -3,3 +3,5 @@ Because animation not compatible on cross platform then `_animations.scss`  will
 To  manage the color system with Sass as functional then the `_variables.scss` ,colours, typography.
 
 On the layout by separate of concern then layout must be slpit out by _body, _card, _footer, _logo, _search
+
+On Scss style  you navigate your UI on  the  HTML style  then nopading , nomargin is tooltip to levagrade your idea

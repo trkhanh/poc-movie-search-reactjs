@@ -1,9 +1,11 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
+
 const TMDBLogo = "./images/tmdb.svg";
 
 class SearchBox extends Component {
   handleChange(event) {
+    console.log('SearchBox handleChange',event);
+    
     event.target.select();
   }
   render() {
