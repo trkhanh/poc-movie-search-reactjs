@@ -1,4 +1,7 @@
+import React from 'react';
 import { useState, useEffect } from 'react';
+import TimerDisplay from '../Timer/TimerDisplay';
+import useTimer from '../Timer/useTimer';
 
 const Notification = ({ message, type = 'info' }) => {
   const [isVisible, setIsVisible] = useState(true);
@@ -37,3 +40,5 @@ const TimerApp = () => {
     </div>
   );
 };
+
+export default TimerApp;

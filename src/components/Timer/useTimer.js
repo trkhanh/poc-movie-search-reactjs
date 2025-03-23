@@ -42,3 +42,5 @@ const useTimer = (initialTime = 60, onTimerEnd = () => {}) => {
 
   return { timeLeft, isRunning, start, reset };
 };
+
+export default useTimer;

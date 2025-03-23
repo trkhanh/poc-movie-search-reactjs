@@ -1,11 +1,13 @@
-import { memo } from 'react';
+import React, { memo } from 'react';
 
 const TimerDisplay = memo(({ timeLeft }) => {
   const minutes = Math.floor(timeLeft / 60);
   const seconds = timeLeft % 60;
   return (
-    <div aria-live="polite">
+    <div aria-live="polite" style={{ fontSize: '10rem', color: 'white' }}>
       {String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}
     </div>
   );
 });
+
+export default TimerDisplay;
