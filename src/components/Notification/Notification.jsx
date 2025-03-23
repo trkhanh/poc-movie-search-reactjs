@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { useState, useEffect } from 'react';
 
 const Notification = ({ message, type = 'info' }) => {
@@ -12,4 +12,4 @@ const Notification = ({ message, type = 'info' }) => {
   return isVisible ? <div className={`notification ${type}`}>{message}</div> : null;
 };
 
-export default Notification;
+export default memo(Notification);

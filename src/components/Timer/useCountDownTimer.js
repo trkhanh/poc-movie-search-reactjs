@@ -1,8 +1,8 @@
-// useTimer.js
+// useCountDownTimer.js
 import { useState, useEffect, useCallback, useRef } from 'react';
 
 // Custom hook to handle timer logic
-const useTimer = (initialTime = 60, onTimerEnd = () => {}) => {
+const useCountDownTimer = (initialTime = 60, onTimerEnd = () => {}) => {
   const [timeLeft, setTimeLeft] = useState(initialTime);
   const [isRunning, setIsRunning] = useState(false);
   const intervalRef = useRef(null);
@@ -43,4 +43,4 @@ const useTimer = (initialTime = 60, onTimerEnd = () => {}) => {
   return { timeLeft, isRunning, start, reset };
 };
 
-export default useTimer;
+export default useCountDownTimer;
