@@ -1,0 +1,53 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 16px;
+}
+
+.card-backdrop {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-content {
+  display: flex;
+  padding: 16px;
+}
+
+.card-poster {
+  width: 150px;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+.card-details {
+  flex: 1;
+}
+
+.card-details h2 {
+  margin: 0 0 8px;
+}
+
+.card-details .tagline {
+  font-style: italic;
+  color: #555;
+}
+
+.card-details .overview {
+  margin: 16px 0;
+  color: #333;
+}
+
+.card-details a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.card-details a:hover {
+  text-decoration: underline;
+}

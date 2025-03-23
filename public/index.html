@@ -3,14 +3,15 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js">
+<html class="no-js" lang="en">
 <!--<![endif]-->
 
 <head>
   <meta charset="utf-8">
-  <title>ReactJS - TMDb Movie Search</title>
-  <meta name="description" content="ReactJS TMDb Movie Search - A responsive web app to search movie information and artwork via The Movie Database (TMDb) API. Built on Facebook's ReactJS framework.">
-  <meta name="viewport" content="width=device-width">
+  <title>React App</title>
+  <meta name="description" content="Web application">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ReactJS - TMDb Movie Search" />
   <meta name="twitter:description" content="Search movie information and artwork via The Movie Database (TMDb) API." />
@@ -24,11 +25,12 @@
   <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Oswald:300" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
-  <link rel="icon" href="images/favicon.png">
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
   <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed.png">
 </head>
 
 <body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
   <a href="https://github.com/SKempin/reactjs-tmdb-app" onclick="ga('send', 'event', 'link', 'external', 'Fork on Github ribbon')"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
   <div id="outer-container">
     <!--[if lt IE 10]>
@@ -38,6 +40,7 @@
       <div class="row">
         <div class="col-xs-12 col-lg-10 offset-lg-1">
           <div id="app"></div>
+          <div id="root"></div> <!-- Ensure this exists -->
           <footer>
             <span><a href="http://www.stephenkempin.co.uk/" rel="author" onclick="ga('send', 'event', 'link', 'external', 'Portfolio')">Designed &amp; developed by Stephen Kempin</a> </span>
             <span><a href="https://github.com/SKempin/reactjs-tmdb-app" title="View Github Repo"><i class="icon ion-social-github" aria-hidden="true" onclick="ga('send', 'event', 'link', 'external', 'View Code')"></i>View Code</a></span>
